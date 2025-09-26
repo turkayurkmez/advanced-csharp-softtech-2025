@@ -11,6 +11,8 @@ namespace TaskCancellationDemo
         }
 
         private CancellationTokenSource _cancellationTokenSource;
+        private CancellationTokenSource _anotherTaskCancellation;
+
         private HttpClient httpClient = new HttpClient();
 
         private async void buttonDownload_Click(object sender, EventArgs e)
@@ -178,6 +180,7 @@ namespace TaskCancellationDemo
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             _cancellationTokenSource?.Cancel();
+            _anotherTaskCancellation?.Cancel();
             httpClient?.Dispose();
         }
     }
