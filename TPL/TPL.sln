@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLOverview", "TPLOverview\TPLOverview.csproj", "{E02E729B-82DF-4F5B-8ED0-2E43835D6D62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLINQRealWorld", "PLINQRealWorld\PLINQRealWorld.csproj", "{7EE53116-3900-44ED-B988-84D9055DCB6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E02E729B-82DF-4F5B-8ED0-2E43835D6D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E02E729B-82DF-4F5B-8ED0-2E43835D6D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E02E729B-82DF-4F5B-8ED0-2E43835D6D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE53116-3900-44ED-B988-84D9055DCB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE53116-3900-44ED-B988-84D9055DCB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE53116-3900-44ED-B988-84D9055DCB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE53116-3900-44ED-B988-84D9055DCB6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
