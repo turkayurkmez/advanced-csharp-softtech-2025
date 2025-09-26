@@ -36,12 +36,16 @@ namespace introToThread
                 progressBar1.Value = i / 100;
             }
 
-            
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            thread.Join();
+            if (thread != null)
+            {
+                thread.Join();
+            }
+           
 
 
 
@@ -53,7 +57,11 @@ namespace introToThread
             ////bunu bekle:
             await Task.Run(taskLoop);
 
-            //await taskLoop();
+            //Task.Run -> Bir task'ý thread pool'a ekleyerek asenkron çalýþmasýný saðlar.
+
+
+            //þaðýdaki satýr ise metodun bitmesini bekler. Haliyle senkron hale getirir.
+           //await  taskLoop();
             //beklediðin iþ bittikten sonra çalýþtýr:
             MessageBox.Show("Thread Bitti");
 
@@ -67,6 +75,7 @@ namespace introToThread
             {
                 labelTask.Text = i.ToString();
             }
+          
         }
     }
 }

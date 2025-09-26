@@ -54,7 +54,7 @@
             textBoxUrl.Name = "textBoxUrl";
             textBoxUrl.Size = new Size(593, 27);
             textBoxUrl.TabIndex = 1;
-            textBoxUrl.Text = "https://file-examples.com/wp-content/storage/2017/02/file-sample_100kB.doc";
+            textBoxUrl.Text = "https://ash-speed.hetzner.com/100MB.bin";
             // 
             // buttonDownload
             // 
@@ -74,12 +74,13 @@
             buttonCancel.TabIndex = 3;
             buttonCancel.Text = "İptal";
             buttonCancel.UseVisualStyleBackColor = true;
+            buttonCancel.Click += buttonCancel_Click;
             // 
             // progressBar1
             // 
             progressBar1.Location = new Point(143, 135);
             progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(524, 29);
+            progressBar1.Size = new Size(645, 29);
             progressBar1.TabIndex = 4;
             // 
             // labelStatus
@@ -112,9 +113,9 @@
             // listBoxLog
             // 
             listBoxLog.FormattingEnabled = true;
-            listBoxLog.Location = new Point(391, 283);
+            listBoxLog.Location = new Point(276, 279);
             listBoxLog.Name = "listBoxLog";
-            listBoxLog.Size = new Size(217, 144);
+            listBoxLog.Size = new Size(512, 144);
             listBoxLog.TabIndex = 8;
             // 
             // Form1
@@ -133,6 +134,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            FormClosed += Form1_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
